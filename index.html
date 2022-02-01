@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <div class="Header">
+            <h1>Etch a Sketch</h1>
+        </div>
+
+        <div class="controls-container">
+            <div class="colorard">
+                <div class="color-box">
+                    <span>Pen Colour:</span>
+                    <input type="color" id="color-select">
+                </div>
+            </div>
+            <button class="btn" id="fill-btn">Toggle Fill</button>
+            <button class="btn" id="rainbow-btn">Toggle Rainbow Pen</button>
+            <button class="btn" id="erase-btn">Toggle Eraser</button>
+            <button class="btn" id="clear-btn">Clear Grid</button>
+
+            <div class="slider">
+                <input type="range" value="24" min="1" max="50" id="range-slider" onmousemove="sliderValue(this.value)" onchange="rangeSlider(this.value)">
+                <div id="progress-bar"></div>
+                <p class="grid-size">Grid Size: <span id="range-value">24</span> x <span id="range-value">24</span></p>
+            </div>
+
+        </div>
+
+        <div class="grid-wrapper">
+            <div id="grid-container"></div>
+        </div>
+    </div>
+    
+    <script  src="scripts.js"></script>
+</body>
+</html>
