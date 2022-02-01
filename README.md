@@ -1,5 +1,4 @@
 # Etch-A-Sketch-
-# Etch-A-Sketch
 
 My attempt at creating something similiar to the classic Etch-A-Sketch toy, using only HTML, CSS and vanilla Javascript.
 
